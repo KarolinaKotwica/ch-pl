@@ -1,0 +1,55 @@
+:root {
+  --min-screen-height: 100vh;
+}
+
+.App {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: .7fr .9fr 1.5fr .9fr;
+  grid-row: auto;
+  grid-template-areas: 
+    "header header header header"
+    "header header header header"
+    "content content content content";
+  gap: .75fr .4fr;
+}
+
+.App-header {
+  grid-area: header;
+  min-height: var(--min-screen-height);
+  background-image: url('../public/polska-2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.navigation {
+  grid-area: header;
+  position: relative;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.content {
+  grid-area: content;
+  background-color: beige;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media screen and (orientation: portrait ) and (max-width: 768px) {
+  .App {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "header"
+      "content";
+  }
+}
