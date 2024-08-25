@@ -8,12 +8,26 @@ import {
     faRegistered,
     faSignInAlt,
     faSignOutAlt,
+    faBars,
   } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useWindowDimensions } from '../hooks/useWindowDimensions';
 
 
 const Nav = () => {
     const user = useSelector((state) => state.user);
     const dispatch = useDispatch();
+
+    const {width} = useWindowDimensions();
+
+    const getMobileMenu = () => {
+        if (width <= 768) {
+            return (
+                <FontAwesomeIcon icon={faBars} size="lg" className="nav-mobile-menu" />
+            );
+        }
+        return null;
+    };
 
     useEffect(() => {
         dispatch({
@@ -28,8 +42,9 @@ const Nav = () => {
     return (
         <React.Fragment>
         <nav className="navigation">
+            { getMobileMenu() }
             <ul>
-                {/* <FontAwesomeIcon icon={faUser} /> */}
+                <FontAwesomeIcon icon={faUser} />
                 <span className='menu-name'>{user.userName}</span>
                 <li><a href='#'>Zaloguj</a></li>
                 <li><a href='#'>Kupno / sprzedaz</a></li>

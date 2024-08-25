@@ -10,3 +10,8 @@ ul li {
     text-decoration: none;
     list-style-type: none;
 }
+
+.nav-mobile-menu {
+    margin-right: 1em;
+    padding: 2rem;
+}
