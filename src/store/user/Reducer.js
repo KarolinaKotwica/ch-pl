@@ -13,7 +13,7 @@ export const UserProfileSetType = "USER_PROFILE_SET";
  * @property {UserProfilePayload|null} payload
  */
 
-export const UserProfileReducer = (state = null, action) => {
+export const UserProfileReducer = (state = { id: '', userName: '' }, action) => {
   switch (action.type) {
     case UserProfileSetType:
       if (action.payload && typeof action.payload.id === 'string' && typeof action.payload.userName === 'string') {

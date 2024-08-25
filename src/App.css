@@ -17,9 +17,8 @@
 .App-header {
   grid-area: header;
   min-height: var(--min-screen-height);
-  background-image: url('../public/polska-2.png');
-  background-size: cover;
-  background-position: center;
+  background-image: url('../public/flaga.jpeg');
+  background-size: inherit;
 }
 
 .navigation {
