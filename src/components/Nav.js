@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import './Nav.css'
 import { useEffect } from 'react';
 import { UserProfileSetType } from '../store/user/Reducer';
 import {
@@ -39,9 +38,6 @@ const Nav = () => {
         });
     }, [dispatch]);
 
-    if (width >= 768) {
-        return null;
-    } else
     return (
         <React.Fragment>
         <nav className="navigation">
