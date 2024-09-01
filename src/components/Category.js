@@ -22,9 +22,6 @@ const GroupCategory = () => {
       });
   }, []);
 
-  if (width <= 768) {
-    return null;
-  }
   return <div>{categories}</div>;
 };
 

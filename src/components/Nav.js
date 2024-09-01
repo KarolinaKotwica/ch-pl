@@ -39,18 +39,23 @@ const Nav = () => {
         });
     }, [dispatch]);
 
+    if (width >= 768) {
+        return null;
+    } else
     return (
         <React.Fragment>
         <nav className="navigation">
             { getMobileMenu() }
-            <ul>
-                <FontAwesomeIcon icon={faUser} />
-                <span className='menu-name'>{user.userName}</span>
-                <li><a href='#'>Zaloguj</a></li>
-                <li><a href='#'>Kupno / sprzedaz</a></li>
-                <li><a href='#'>Firmy</a></li>
-                <li><a href='#'>Informacje</a></li>
-            </ul>
+            {width >= 768 &&
+                <ul>
+                    <FontAwesomeIcon icon={faUser} />
+                    <span className='menu-name'>{user.userName}</span>
+                    <li><a href='#'>Zaloguj</a></li>
+                    <li><a href='#'>Kupno / sprzedaz</a></li>
+                    <li><a href='#'>Firmy</a></li>
+                    <li><a href='#'>Informacje</a></li>
+                </ul>
+            }
         </nav>
         </React.Fragment>
     )
