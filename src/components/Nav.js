@@ -11,10 +11,12 @@ import {
   } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useWindowDimensions } from '../hooks/useWindowDimensions';
+import ReactModal from "react-modal";
 
 
 const Nav = () => {
     const user = useSelector((state) => state.user);
+    const [showMenu, setShowMenu] = useState(false);
     const dispatch = useDispatch();
 
     const {width} = useWindowDimensions();

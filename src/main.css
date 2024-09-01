@@ -1,5 +1,5 @@
 :root {
-  --min-screen-height: 100vh;
+  --min-screen-height: 102.5vh;
 }
 
 .App {
@@ -14,8 +14,8 @@
 .App-header {
   grid-area: header;
   min-height: var(--min-screen-height);
-  background-image: url("../public/flaga.jpeg");
-  background-size: inherit;
+  background-image: url("../public/main.jpeg");
+  background-size: cover;
 }
 
 .modal-menu {
@@ -56,6 +56,13 @@
   .App {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "header" "content";
+  }
+  .modal-menu {
+    min-width: 60px;
+    left: 0.5em;
+    right: 0.5em;
+    top: 3.5em;
+    transform: translate(0%);
   }
 }
 body {
