@@ -12,6 +12,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useWindowDimensions } from '../hooks/useWindowDimensions';
 import ReactModal from "react-modal";
+import SideBarMenus from "./SidebarMenu";
 
 
 const Nav = () => {
@@ -24,11 +25,24 @@ const Nav = () => {
     const getMobileMenu = () => {
         if (width <= 768) {
             return (
-                <FontAwesomeIcon icon={faBars} size="lg" className="nav-mobile-menu" />
+                <FontAwesomeIcon
+                onClick={onClickToggle}
+                icon={faBars} 
+                size="lg" 
+                className="nav-mobile-menu" />
             );
         }
         return null;
     };
+
+    const onClickToggle = (e) => {
+        setShowMenu(!showMenu);
+    };
+
+    const onRequestClose = (e) => {
+        setShowMenu(false);
+    };
+    
 
     useEffect(() => {
         dispatch({
@@ -42,6 +56,22 @@ const Nav = () => {
 
     return (
         <React.Fragment>
+            <ReactModal
+            className="modal-menu"
+            isOpen={showMenu}
+            onRequestClose={onRequestClose}
+            shouldCloseOnOverlayClick={true}
+        >
+        {/* <ul>
+            <FontAwesomeIcon icon={faUser} />
+            <span className='menu-name'>{user.userName}</span>
+            <li><a href='#'>Zaloguj</a></li>
+            <li><a href='#'>Kupno / sprzedaz</a></li>
+            <li><a href='#'>Firmy</a></li>
+            <li><a href='#'>Informacje</a></li>
+        </ul> */}
+        <SideBarMenus />
+      </ReactModal>
         <nav className="navigation">
             { getMobileMenu() }
             {width >= 768 &&
