@@ -31,7 +31,7 @@ const PasswordComparison = ({ dispatch, password, passwordConfirm }) => {
 
   return (
     <React.Fragment>
-      <div>
+      <div className="reg-inputs-input">
         <label>password</label>
         <input
           type="password"
@@ -40,7 +40,7 @@ const PasswordComparison = ({ dispatch, password, passwordConfirm }) => {
           onChange={onChangePassword}
         />
       </div>
-      <div>
+      <div className="reg-inputs-input">
         <label>password confirmation</label>
         <input
           type="password"

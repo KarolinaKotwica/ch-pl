@@ -3,6 +3,7 @@ import ReactModal from "react-modal";
 import userReducer from "./common/UseReducer";
 import { allowSubmit } from "./common/Helpers";
 import PasswordComparison from "./common/PasswordComparison";
+// import ModalProps from "../types/ModalProps";
 
 const Registration = ({ isOpen, onClickToggle }) => {
   const [
@@ -53,15 +54,15 @@ const Registration = ({ isOpen, onClickToggle }) => {
     >
       <form>
         <div className="reg-inputs">
-          <div>
+          <div className="reg-inputs-input">
             <label>Username</label>
             <input type="text" value={userName} onChange={onChangeUserName} />
           </div>
-          <div>
+          <div className="reg-inputs-input">
             <label>Email</label>
             <input type="text" value={email} onChange={onChangeEmail} />
           </div>
-          <div>
+          <div className="reg-inputs-input">
             <PasswordComparison
               dispatch={dispatch}
               password={password}
