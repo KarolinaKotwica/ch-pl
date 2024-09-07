@@ -8,10 +8,9 @@ import {
   faSignInAlt,
   faSignOutAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import Registration from "../../auth/Registration";
-import "./SideBarMenus.css";
-import Login from "../../auth/Login";
-import Logout from "../../auth/Logout";
+import Registration from "../components/auth/Registration";
+import Login from "../components/auth/Login";
+import Logout from "../components/auth/Logout";
 import { Link } from "react-router-dom";
 
 const SideBarMenus = () => {

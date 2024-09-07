@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
 import { UserProfileSetType } from '../store/user/Reducer';
 import {
     faUser,
