@@ -169,6 +169,12 @@ hr {
   border: solid 2px var(--section-divider-color);
 }
 
+.title-bar {
+  margin-bottom: 0.4em;
+  padding-bottom: 0.25em !important;
+  border-bottom: 3px solid var(--input-border-color);
+}
+
 @media screen and (orientation: portrait) and (max-width: 768px) {
   .App {
     grid-template-columns: 1fr;
@@ -225,6 +231,14 @@ ul li {
   max-height: 75vh;
   overflow-y: auto;
   margin-bottom: 0.5em;
+}
+
+.main-header {
+  padding: 0.5em 0.75em 0.5em 0.75em;
+  margin-top: 0.18em;
+  margin-bottom: 0.75em;
+  background-color: white;
+  border: solid 1px var(--border-color);
 }
 
 /*# sourceMappingURL=main.css.map */

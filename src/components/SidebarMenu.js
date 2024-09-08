@@ -33,7 +33,7 @@ const SideBarMenus = () => {
 
   return (
     <React.Fragment>
-      <ul>
+      {/* <ul>
         <li>
           <FontAwesomeIcon icon={faUser} />
           <span className="menu-name">
@@ -64,6 +64,19 @@ const SideBarMenus = () => {
           </span>
           <Logout isOpen={showLogout} onClickToggle={onClickToggleLogout} />
         </li>
+      </ul> */}
+      <ul>
+        <span className='menu-name'>{user.userName}</span>
+        <li>
+          <FontAwesomeIcon icon={faSignInAlt} />
+          <span onClick={onClickToggleLogin} className="menu-name">
+            login
+          </span>
+          <Login isOpen={showLogin} onClickToggle={onClickToggleLogin} />
+        </li>
+        <li><a href='#'>Kupno / sprzedaz</a></li>
+        <li><a href='#'>Firmy</a></li>
+        <li><a href='#'>Informacje</a></li>
       </ul>
     </React.Fragment>
   );

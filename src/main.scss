@@ -1,6 +1,7 @@
 @import 'App';
 @import 'index';
 @import 'components/ErrorBoundary';
-@import 'components/Nav';
+@import './components/Nav';
 @import 'components/auth/Logout';
 @import 'components/auth/Registration';
+@import 'components/MainHeader';

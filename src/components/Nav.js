@@ -61,27 +61,12 @@ const Nav = () => {
             onRequestClose={onRequestClose}
             shouldCloseOnOverlayClick={true}
         >
-        {/* <ul>
-            <FontAwesomeIcon icon={faUser} />
-            <span className='menu-name'>{user.userName}</span>
-            <li><a href='#'>Zaloguj</a></li>
-            <li><a href='#'>Kupno / sprzedaz</a></li>
-            <li><a href='#'>Firmy</a></li>
-            <li><a href='#'>Informacje</a></li>
-        </ul> */}
         <SideBarMenus />
       </ReactModal>
         <nav className="navigation">
             { getMobileMenu() }
             {width >= 768 &&
-                <ul>
-                    <FontAwesomeIcon icon={faUser} />
-                    <span className='menu-name'>{user.userName}</span>
-                    <li><a href='#'>Zaloguj</a></li>
-                    <li><a href='#'>Kupno / sprzedaz</a></li>
-                    <li><a href='#'>Firmy</a></li>
-                    <li><a href='#'>Informacje</a></li>
-                </ul>
+                <SideBarMenus />
             }
         </nav>
         </React.Fragment>
