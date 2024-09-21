@@ -4,18 +4,21 @@
 
 .App {
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 0.7fr 0.9fr 1.5fr 0.9fr;
-  grid-row: auto;
-  grid-template-areas: "header header header header" "header header header header" "content content content content";
   gap: 0.75fr 0.4fr;
 }
 
 .App-header {
   grid-area: header;
   min-height: var(--min-screen-height);
-  background-image: url("../public/main.jpeg");
-  background-size: cover;
+  background-color: cadetblue;
+}
+
+.screen-root-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-bottom: 2em;
+  border: var(--border);
+  border-radius: 0.3em;
 }
 
 .modal-menu {
