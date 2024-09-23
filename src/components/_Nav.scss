@@ -1,14 +1,20 @@
 .navigation {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     flex-direction: row;
+    padding-top: 7rem;
 
-}
+    ul {
+        border-top: 1px solid #000;
+        align-items: flex-end;
+        padding-top: 1rem;
 
-ul li {
-    padding: 1rem;
-    text-decoration: none;
-    list-style-type: none;
+        li {
+            padding: 1rem;
+            text-decoration: none;
+            list-style-type: none;
+        }
+    }
 }
 
 .nav-mobile-menu {

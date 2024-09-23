@@ -9,8 +9,8 @@ const Home = () => {
     <div className="screen-root-container home-container">
         <Nav />
         <Header />
-        <Main />
         <GroupCategory />
+        <Main />
     </div>
   );
 };

@@ -6,7 +6,7 @@ import React, { useState, useEffect } from "react";
 const GroupCategory = () => {
   const { width } = useWindowDimensions();
   const [categories, setCategories] = useState(
-    <div>Nav</div>
+    <div></div>
   );
 
   useEffect(() => {
@@ -22,7 +22,29 @@ const GroupCategory = () => {
       });
   }, []);
 
-  return <div>{categories}</div>;
+  // return <div>{categories}</div>;
+  return (
+    <div class="ag-format-container">
+      <div class="ag-box">
+        <div class="ag-item">
+          <a href="#" class="ag-item_link">
+            <div class="ag-item_bg"></div>
+
+            <div class="ag-item_title">
+              
+            </div>
+
+            <div class="ag-item_date-box">
+              Start:
+              <span class="ag-item_date">
+                04.11.2022
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  )
 };
 
 export default GroupCategory;
