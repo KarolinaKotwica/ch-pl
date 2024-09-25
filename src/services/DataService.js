@@ -6,16 +6,20 @@ export async function getCategories() {
   const promise = new Promise((res, rej) => {
     setTimeout(() => {
       const categories = [];
-      const programming = new Category("1", "Informacje");
-      categories.push(programming);
-      const cooking = new Category("2", "Sklep");
-      categories.push(cooking);
-      const sports = new Category("3", "Eventy");
-      categories.push(sports);
-      const entertainment = new Category("4", "Porady");
-      categories.push(entertainment);
-      const travel = new Category("5", "Firmy");
-      categories.push(travel);
+      const informacje = new Category("1", "Informacje");
+      categories.push(informacje);
+      const sklep = new Category("2", "Sklep");
+      categories.push(sklep);
+      const eventy = new Category("3", "Eventy");
+      categories.push(eventy);
+      const porady = new Category("4", "Porady");
+      categories.push(porady);
+      const firmy = new Category("5", "Firmy");
+      categories.push(firmy);
+      const lekarze = new Category("5", "Lekarze");
+      categories.push(lekarze);
+      const forum = new Category("5", "Forum");
+      categories.push(forum);
 
       res(categories);
     }, 2000);
