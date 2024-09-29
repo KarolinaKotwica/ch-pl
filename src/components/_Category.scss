@@ -1,10 +1,10 @@
-$background: #427aa1;
+$background: #b2b5ac;
 $background2: #5eb1bf;
 $background3: #118ab2;
 
 .ag-format-container {
     width: 1142px;
-    margin: 0 auto;
+    margin: 4rem auto;
 }
 
 .ag-box {
@@ -21,13 +21,11 @@ $background3: #118ab2;
 }
 
 .ag-item {
-    -ms-flex-preferred-size: calc(33.33333% - 30px);
-    flex-basis: calc(33.33333% - 30px);
+    // -ms-flex-preferred-size: calc(33.33333% - 30px);
+    // flex-basis: calc(33.33333% - 30px);
   
     margin: 0 15px 30px;
-  
     overflow: hidden;
-  
     border-radius: 28px;
 }
 

@@ -17,9 +17,58 @@
 .App-header {
   grid-area: header;
   min-height: var(--min-screen-height);
-  background-image: url('../public/kwiat.jpg');
+  background-image: url('../public/krakow.jpg');
+  // Obraz <a href="https://pixabay.com/pl/users/tevenet-5800252/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2893783"> Piotr</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2893783"> Pixabay</a>
   background-size: cover;
   background-color: cadetblue;
+  position: relative;
+}
+
+.waves {
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px;
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 60s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
 }
 
 .screen-root-container {
@@ -59,11 +108,6 @@
   grid-area: content;
   background-color: beige;
 
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
 input[type="text"],
@@ -196,6 +240,11 @@ hr {
       "header"
       "header"
       "content";
+  }
+
+  .waves {
+    height:40px;
+    min-height:40px;
   }
   
   .modal-menu {
