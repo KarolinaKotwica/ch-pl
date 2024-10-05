@@ -48,19 +48,21 @@ const CardComponent = () => {
     <main className='main-info'>
         <section className='subscribe'>
         <div className="card" ref={cardRef}>
-        <h2 className="title">Newsletter</h2>
-        <p className="text">Proszę wprowadź swój e-mail i naciśnij Enter</p>
-        <svg className="line" viewBox="0 0 340 110">
-            <path d="M 20,62 H 300" />
-        </svg>
-        <svg className="line2" viewBox="0 0 50 52" ref={line2Ref}>
-            <path style={{ fill: 'none', stroke: '#000000', strokeWidth: 2 }} d="m 38.391765,17.110953 -16.66751,16.667516 -7.81073,-7.201053 c -2.56639,-2.366065 -3.80148,-3.574166 -6.56097,-5.722314 l -4.6426304,-1.736535" />
-        </svg>
-        <form className="form">
-            <input className="input" type="email" ref={inputRef} />
-        </form>
-        {isSubmitted && <p className="thank-you">Dziękujemy!</p>}
+            <h2 className="title">Dołącz do naszego newslettera</h2>
+            <p className='text'>Otrzymuj najświeższe informacje, porady i aktualności dla Polaków w Szwajcarii bezpośrednio na swoją skrzynkę e-mail.</p>
+            <p className="text">Proszę wprowadź swój e-mail i naciśnij Enter</p>
+            <svg className="line" viewBox="0 0 340 110">
+                <path d="M 20,62 H 300" />
+            </svg>
+            <svg className="line2" viewBox="0 0 50 52" ref={line2Ref}>
+                <path style={{ fill: 'none', stroke: '#000000', strokeWidth: 2 }} d="m 38.391765,17.110953 -16.66751,16.667516 -7.81073,-7.201053 c -2.56639,-2.366065 -3.80148,-3.574166 -6.56097,-5.722314 l -4.6426304,-1.736535" />
+            </svg>
+            <form className="form">
+                <input className="input" type="email" ref={inputRef} />
+            </form>
+            {isSubmitted && <p className="thank-you">Dziękujemy!</p>}
         </div>
+        <img src="/envelope.png" alt="Ikona koperty" />
         </section>
     </main>
   );

@@ -517,17 +517,22 @@ code {
   display: flex;
   justify-content: center;
   margin: 5rem 0;
+  padding: 5rem;
+}
+.subscribe img {
+  width: 30%;
+  margin: 0 auto;
 }
 
 .card {
-  background: white;
+  background: #fff;
   border-radius: 12px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  height: 200px;
+  height: auto;
   overflow: hidden;
   padding: 20px;
   position: relative;
-  width: 30rem;
+  width: 40rem;
 }
 
 .title {
