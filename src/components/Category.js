@@ -25,6 +25,7 @@ const GroupCategory = () => {
 const CategoriesComponent = ({ Categories }) => {
   return (
     <div className="ag-format-container">
+      <h2 className="category-text">Znajdź potrzebne informacje w poniższych kategoriach:</h2>
       <div className="ag-box">
         {Categories.map((category, index) => (
           <div className="ag-item" key={index}>

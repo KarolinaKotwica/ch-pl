@@ -1,17 +1,44 @@
 .home-container {
     margin: 0 auto;
-    max-width: 85rem;
+    width: 100%;
     // display: grid;
     // grid-template-columns: .7fr .9fr 1.5fr .9fr;
     // grid-template-areas: 
     //   "nav nav nav nav"
     //   "header header header header"
     //   "content content content content";
-    gap: .75fr .4fr;
+    // gap: .75fr .4fr;
 }
 
-.navigation {
-    grid-area: nav;
+.screen-root-container {
+    // margin: 0 auto;
+    // max-width: 1200px;
+    margin-bottom: 2em;
+    // border: var(--border);
+    // border-radius: 0.3em;
+}
+
+.header-text {
+    width: 50%;
+    margin-left: 5%;
+    padding-top: 10rem;
+}
+
+.header-p {
+    font-size: 1.25rem;
+}
+
+.search-input {
+    width: 50% !important;
+    outline: none;
+}
+
+.search-button {
+    padding: .7rem;
+    margin-left: .5rem;
+    border: none;
+    outline: none;
+    background: aquamarine;
 }
   
 .sidebar {

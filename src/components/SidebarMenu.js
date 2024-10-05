@@ -65,19 +65,31 @@ const SideBarMenus = () => {
           <Logout isOpen={showLogout} onClickToggle={onClickToggleLogout} />
         </li>
       </ul> */}
-      <ul>
-        <span className='menu-name'>{user.userName}</span>
-        <li>
-          <FontAwesomeIcon icon={faSignInAlt} />
-          <span onClick={onClickToggleLogin} className="menu-name">
-            login
+        <ul className="menuList">
+          <li><a href='#'>Kupno / sprzedaz</a></li>
+          <li><a href='#'>Firmy</a></li>
+          <li><a href='#'>Informacje</a></li>
+        </ul>
+        <ul className="loginMenu">
+          {/* <span className='menu-name'>{user.userName}</span> */}
+          <li>
+            {/* <FontAwesomeIcon icon={faSignInAlt} /> */}
+            <span onClick={onClickToggleLogin} className="menu-name">
+              login
+            </span>
+            <Login isOpen={showLogin} onClickToggle={onClickToggleLogin} />
+          </li>
+          <li>
+          {/* <FontAwesomeIcon icon={faRegistered} /> */}
+          <span onClick={onClickToggleRegister} className="menu-name">
+            register
           </span>
-          <Login isOpen={showLogin} onClickToggle={onClickToggleLogin} />
+          <Registration
+            isOpen={showRegister}
+            onClickToggle={onClickToggleRegister}
+          />
         </li>
-        <li><a href='#'>Kupno / sprzedaz</a></li>
-        <li><a href='#'>Firmy</a></li>
-        <li><a href='#'>Informacje</a></li>
-      </ul>
+        </ul>
     </React.Fragment>
   );
 };

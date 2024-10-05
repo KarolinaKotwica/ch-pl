@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 :root {
-  --min-screen-height: 102.5vh;
+  --min-screen-height: 95vh;
 }
 
 .App {
   margin: 0 auto;
+  font-family: "Lato", sans-serif;
   // display: grid;
   // grid-template-columns: .7fr .9fr 1.5fr .9fr;
   // grid-row: auto;
@@ -11,17 +14,19 @@
   //   "header header header header"
   //   "header header header header"
   //   "content content content content";
-  gap: .75fr .4fr;
+  // gap: .75fr .4fr;
 }
 
 .App-header {
-  grid-area: header;
   min-height: var(--min-screen-height);
-  background-image: url('../public/krakow.jpg');
-  // Obraz <a href="https://pixabay.com/pl/users/tevenet-5800252/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2893783"> Piotr</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2893783"> Pixabay</a>
+  background-image: url('../public/main.jpg');
+  // <a href="https://pl.freepik.com/darmowe-wektory/estetyczny-pastelowy-botaniczny-abstrakcyjny-wektor-tla_19599101.htm#fromView=search&page=1&position=19&uuid=13d4bc2f-3569-4686-9ef6-13b0555931dd">Obraz autorstwa rawpixel.com na Freepik</a>
   background-size: cover;
   background-color: cadetblue;
   position: relative;
+
+  display: flex;
+  align-items: flex-start;
 }
 
 .waves {
@@ -69,15 +74,6 @@
   100% { 
     transform: translate3d(85px,0,0);
   }
-}
-
-.screen-root-container {
-  margin: 0 auto;
-  max-width: 1200px;
-  margin-bottom: 2em;
-  border: var(--border);
-  border-radius: 0.3em;
-
 }
 
 .modal-menu {
