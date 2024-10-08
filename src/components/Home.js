@@ -3,6 +3,7 @@ import Main from './Main';
 import GroupCategory from './Category';
 import Nav from './Nav';
 import Header from './Header';
+import RightMenu from './areas/rightmenu/RightMenu';
 
 const Home = () => {
   return (
@@ -10,7 +11,10 @@ const Home = () => {
         <Nav />
         <Header />
         <GroupCategory />
-        <Main />
+        <section className='container_with_right_menu'>
+            <Main />
+            <RightMenu />
+        </section>
     </div>
   );
 };

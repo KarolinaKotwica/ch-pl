@@ -46,6 +46,10 @@ const CardComponent = () => {
 
   return (
     <main className='main-info'>
+        <section>
+            <h3>Jakis tytul czegos</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dictum magna, sed congue justo. Nulla tincidunt ornare felis, nec ultrices felis tristique id. Integer at mauris ut lectus elementum interdum non nec lorem. Nam condimentum, dui vel varius dictum, ligula ligula vehicula purus, id elementum nisl sem ac sem. Etiam in elit et lectus blandit iaculis vel quis lorem. Duis quis tortor eget massa mollis lacinia in et lectus. Cras ultricies urna vitae velit egestas pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam at arcu id sem pellentesque malesuada. Mauris luctus arcu vel augue ultrices, et laoreet eros convallis. Vivamus auctor nisi at nunc cursus aliquam sed ac erat. Fusce quis cursus elit, at mollis lectus. Morbi imperdiet dictum diam in fringilla. Cras ante neque, rhoncus dignissim sollicitudin ac, ultricies ac leo. Donec dapibus odio molestie hendrerit tincidunt. Praesent bibendum consequat ante et pharetra. </p>
+        </section>
         <section className='subscribe'>
         <div className="card" ref={cardRef}>
             <h2 className="title">Dołącz do naszego newslettera</h2>
@@ -62,7 +66,7 @@ const CardComponent = () => {
             </form>
             {isSubmitted && <p className="thank-you">Dziękujemy!</p>}
         </div>
-        <img src="/envelope.png" alt="Ikona koperty" />
+        {/* <img src="/envelope.png" alt="Ikona koperty" /> */}
         </section>
     </main>
   );

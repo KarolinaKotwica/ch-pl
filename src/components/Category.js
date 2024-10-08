@@ -1,6 +1,8 @@
 import { useWindowDimensions } from "../hooks/useWindowDimensions";
 import { getCategories } from "../services/DataService";
 import React, { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
+
 
 const GroupCategory = () => {
   const { width } = useWindowDimensions();
@@ -9,8 +11,7 @@ const GroupCategory = () => {
   useEffect(() => {
     getCategories()
       .then((categories) => {
-        const cats = categories.map((cat) => cat.name); // Przechowujemy tylko nazwy kategorii
-        setCategories(cats);
+        setCategories(categories);
       })
       .catch((err) => {
         console.log(err);
@@ -27,13 +28,13 @@ const CategoriesComponent = ({ Categories }) => {
     <div className="ag-format-container">
       <h2 className="category-text">Znajdź potrzebne informacje w poniższych kategoriach:</h2>
       <div className="ag-box">
-        {Categories.map((category, index) => (
-          <div className="ag-item" key={index}>
-            <a href="#" className="ag-item_link">
+        {Categories.map((category) => (
+          <div className="ag-item" key={category.id}>
+            <Link to={`/categories/${category.id}`} className="ag-item_link">
               <div className="ag-item_bg"></div>
 
               <div className="ag-item_title">
-                {category} 
+                {category.name} 
               </div>
 
               <div className="ag-item_date-box">
@@ -42,12 +43,13 @@ const CategoriesComponent = ({ Categories }) => {
                   &nbsp;04.11.2022
                 </span>
               </div>
-            </a>
+            </Link>
           </div>
         ))}
       </div>
     </div>
   );
 };
+
 
 export default GroupCategory;

@@ -2,9 +2,13 @@
 @import 'index';
 @import 'components/ErrorBoundary';
 @import './components/Nav';
+@import './components/Header';
 @import 'components/auth/Logout';
 @import 'components/auth/Registration';
 @import 'components/MainHeader';
 @import 'components/Home';
 @import 'components/Category';
 @import 'components/Main';
+
+
+@import 'components/areas/main/_ThreadCard';

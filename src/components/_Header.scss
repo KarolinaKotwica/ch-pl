@@ -1,0 +1,82 @@
+.App-header {
+    min-height: var(--min-screen-height);
+    background-image: url('../public/main.jpg');
+    // <a href="https://pl.freepik.com/darmowe-wektory/estetyczny-pastelowy-botaniczny-abstrakcyjny-wektor-tla_19599101.htm#fromView=search&page=1&position=19&uuid=13d4bc2f-3569-4686-9ef6-13b0555931dd">Obraz autorstwa rawpixel.com na Freepik</a>
+    background-size: cover;
+    background-color: cadetblue;
+    position: relative;
+  
+    display: flex;
+    align-items: flex-start;
+}
+
+.header-text {
+    width: 50%;
+    margin-left: 5%;
+    padding-top: 10rem;
+}
+
+.header-p {
+    font-size: 1.25rem;
+}
+
+.search-input {
+    width: 50% !important;
+    outline: none;
+}
+
+.search-button {
+    padding: .7rem;
+    margin-left: .5rem;
+    border: none;
+    outline: none;
+    background: aquamarine;
+}
+
+.waves {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px;
+    min-height:100px;
+    max-height:150px;
+  }
+  
+  .content {
+    position:relative;
+    height:20vh;
+    text-align:center;
+    background-color: white;
+  }
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 60s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+}
+  
