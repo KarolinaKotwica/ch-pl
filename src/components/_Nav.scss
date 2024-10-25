@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     padding: 0 6rem;
-    grid-area: 'nav';
+    background-color: $main-color;
+    position: relative;
+    margin-bottom: 12rem;
 
     ul {
         padding-left: 0;
@@ -19,8 +21,17 @@
     }
 }
 
+.navigation::after {
+    content: 'Polska w Szwajcarii';
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%);
+    font-family: "Lora", serif;
+}
+
 .menu-name {
-    background-color: rgba(127, 255, 212, 0.769);
     padding: .7rem;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
