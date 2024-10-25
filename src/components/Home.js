@@ -11,8 +11,8 @@ const Home = () => {
         <Nav />
         <Header />
         <GroupCategory />
+        <Main />
         <section className='container_with_right_menu'>
-            <Main />
             <RightMenu />
         </section>
     </div>

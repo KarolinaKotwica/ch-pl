@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Italianno&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Italianno&family=LXGW+WenKai+TC&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 $main-color: #f5ebe0;
 $main-color-darker: #d5bdaf;
 $color-white: #fff;
+$color-category: #457b9d;
+$color-grey: #ececec;
 
 * {
   box-sizing: border-box;
@@ -17,7 +20,7 @@ $color-white: #fff;
 
 .App {
   margin: 0 auto;
-  font-family: "Lato", sans-serif;
+  font-family: "LXGW WenKai TC";
 }
 
 .modal-menu {
@@ -31,28 +34,6 @@ $color-white: #fff;
   background-color: #fff;
   padding: 1em 1em 1em 1em;
   z-index: 1000;
-}
-
-.rightmenu-container {
-  width: 25%;
-  padding: 2rem;
-}
-
-.navigation {
-  grid-area: header;
-  position: relative;
-}
-
-.navigation ul {
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
-}
-
-.content {
-  grid-area: content;
-  background-color: beige;
-
 }
 
 input[type="text"],

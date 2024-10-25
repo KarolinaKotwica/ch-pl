@@ -11,8 +11,7 @@
   
 .content {
     min-height: var(--min-screen-height);
-    grid-area: content;
-    background-color: blanchedalmond;
+    background-color: $main-color;
     padding: 0.5em 0.75em 0.5em 0.75em;
 }
 

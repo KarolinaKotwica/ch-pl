@@ -1,11 +1,11 @@
-$background: #99b0ad;
-$background2: #718896;
-$background3: #72acac;
-
 .ag-format-container {
-    width: 1142px;
+    width: 85%;
     margin: 4rem auto;
-    grid-area: 'content';
+}
+
+.category-text {
+    text-align: center;
+    margin-top: 3.5rem;
 }
 
 .ag-box {
@@ -33,7 +33,7 @@ $background3: #72acac;
 .ag-item_link {
     display: block;
     padding: 30px 20px;
-    background-color: $background;  
+    background-color: $color-grey;  
     overflow: hidden;
   
     position: relative;
@@ -42,7 +42,7 @@ $background3: #72acac;
 .ag-item_link:hover,
 .ag-item_link:hover .ag-item_date {
   text-decoration: none;
-  color: #FFF;
+  color: $color-category;
 }
 .ag-item_link:hover .ag-item_bg {
   -webkit-transform: scale(10);
@@ -58,7 +58,7 @@ $background3: #72acac;
   
     font-weight: bold;
     font-size: 30px;
-    color: #FFF;
+    color: $color-category;
   
     z-index: 2;
     position: relative;
@@ -66,7 +66,7 @@ $background3: #72acac;
 
 .ag-item_date-box {
     font-size: 18px;
-    color: #FFF;
+    color: $color-category;
   
     z-index: 2;
     position: relative;
@@ -74,7 +74,7 @@ $background3: #72acac;
 
 .ag-item_date {
     font-weight: bold;
-    color: $background2;
+    color: $main-color-darker;
   
     -webkit-transition: color .5s ease;
     -o-transition: color .5s ease;
@@ -93,7 +93,7 @@ $background3: #72acac;
 .ag-item_bg {
     height: 128px;
     width: 128px;
-    background-color: $background2;
+    background-color: $main-color;
   
     z-index: 1;
     position: absolute;
@@ -106,23 +106,9 @@ $background3: #72acac;
     -o-transition: all .5s ease;
     transition: all .5s ease;
   }
-  .ag-item:nth-child(2n) .ag-item_bg {
-    background-color: $background3;
-  }
-  .ag-item:nth-child(3n) .ag-item_bg {
-    background-color: $background2;
-  }
-  .ag-item:nth-child(4n) .ag-item_bg {
-    background-color: $background3;
-  }
-  .ag-item:nth-child(5n) .ag-item_bg {
-    background-color: $background2;
-  }
-  .ag-item:nth-child(6n) .ag-item_bg {
-    background-color: $background3;
-  }
-  
-  
+.ag-item .ag-item_bg {
+    background-color: $main-color;
+}
   
   @media only screen and (max-width: 979px) {
     .ag-item {
