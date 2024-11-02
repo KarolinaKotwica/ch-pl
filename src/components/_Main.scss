@@ -3,20 +3,29 @@ main {
 }
 
 .main-info {
-    
+    display: flex;
 }
 
 .subscribe {
-    background-color: $color-grey;
+    background-color: $main-color;
     align-items: center;
     display: flex;
     justify-content: center;
     padding: 2rem 0;
+    width: 70%;
 
     img {
         width: 30%;
         margin: 0 auto;
     }
+}
+
+#image-subscribe {
+    width: 30%;
+    background-image: url('../public/girls.jpg');
+    // Obraz <a href="https://pixabay.com/pl/users/surprising_snapshots-11873433/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6843675"> Mircea Iancu</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6843675"> Pixabay</a>
+    background-position: center;
+    background-size: cover;
 }
 
 .card {

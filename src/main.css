@@ -322,7 +322,7 @@ code {
 
 .ag-format-container {
   width: 85%;
-  margin: 4rem auto;
+  margin: 2rem auto;
 }
 
 .category-text {
@@ -456,16 +456,28 @@ main {
   width: 100%;
 }
 
+.main-info {
+  display: flex;
+}
+
 .subscribe {
-  background-color: #ececec;
+  background-color: #f5ebe0;
   align-items: center;
   display: flex;
   justify-content: center;
   padding: 2rem 0;
+  width: 70%;
 }
 .subscribe img {
   width: 30%;
   margin: 0 auto;
+}
+
+#image-subscribe {
+  width: 30%;
+  background-image: url("../public/girls.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .card {
@@ -598,8 +610,34 @@ main {
   }
 }
 .rightmenu-container {
-  width: 25%;
   padding: 2rem;
+}
+
+.topcat-item-container {
+  padding: 2rem;
+}
+
+.topcat-item-container strong {
+  font-size: 1.4rem;
+}
+
+.topcat-threads li {
+  list-style-type: none;
+  position: relative;
+  padding: 1rem;
+}
+
+.topcat-threads li:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -12px;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background-image: url("../public/logo2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .threadcard-container {

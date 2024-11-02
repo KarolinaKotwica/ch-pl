@@ -63,13 +63,10 @@ const CardComponent = () => {
                 {isSubmitted && <p className="thank-you">Dziękujemy!</p>}
             </div>
             {/* <img src="/envelope.png" alt="Ikona koperty" /> */}
-            </section>
-
-
-        <section>
-            <h3>Jakis tytul czegos</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non dictum magna, sed congue justo. Nulla tincidunt ornare felis, nec ultrices felis tristique id. Integer at mauris ut lectus elementum interdum non nec lorem. Nam condimentum, dui vel varius dictum, ligula ligula vehicula purus.</p>
         </section>
+
+
+        <section id='image-subscribe'></section>
         
     </main>
   );

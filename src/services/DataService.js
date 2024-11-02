@@ -6,20 +6,22 @@ export async function getCategories() {
   const promise = new Promise((res, rej) => {
     setTimeout(() => {
       const categories = [];
-      const informacje = new Category("1", "Informacje");
-      categories.push(informacje);
-      const sklep = new Category("2", "Sklep");
-      categories.push(sklep);
-      const eventy = new Category("3", "Eventy");
-      categories.push(eventy);
-      const porady = new Category("4", "Porady");
-      categories.push(porady);
-      const firmy = new Category("5", "Firmy");
-      categories.push(firmy);
-      const lekarze = new Category("5", "Lekarze");
-      categories.push(lekarze);
-      const forum = new Category("5", "Forum");
-      categories.push(forum);
+      const Informacje = new Category("1", "Informacje");
+      categories.push(Informacje);
+      const Wydarzenia = new Category("2", "Wydarzenia");
+      categories.push(Wydarzenia);
+      const Nieruchomosci = new Category("3", "Nieruchomosci");
+      categories.push(Nieruchomosci);
+      const OfertyPracy = new Category("4", "Oferty Pracy");
+      categories.push(OfertyPracy);
+      const FirmyUslugi = new Category("5", "Firmy i uslugi");
+      categories.push(FirmyUslugi);
+      // const lekarze = new Category("5", "Lekarze");
+      // categories.push(lekarze);
+      const Przejazdy = new Category("5", "Przejazdy");
+      categories.push(Przejazdy);
+      const PytaniaPomoc = new Category("5", "Pytania i pomoc");
+      categories.push(PytaniaPomoc);
 
       res(categories);
     }, 2000);
@@ -54,7 +56,7 @@ export async function getThreadsByCategory(catId) {
             threadId: "1",
           },
         ],
-        category: new Category("1", "Programming"),
+        category: new Category("1", "Informacje"),
       });
       threads.push({
         id: "2",
@@ -79,7 +81,7 @@ export async function getThreadsByCategory(catId) {
             threadId: "2",
           },
         ],
-        category: new Category("1", "Programming"),
+        category: new Category("1", "Informacje"),
       });
 
       res(threads);
@@ -183,7 +185,7 @@ export async function getThreadById(Id) {
             threadId: "1",
           },
         ],
-        category: new Category("1", "Programming"),
+        category: new Category("1", "Informacje"),
       };
 
       res(thread);
@@ -219,7 +221,7 @@ export async function getUserThreads(id) {
             threadId: "1",
           },
         ],
-        category: new Category("1", "Programming"),
+        category: new Category("1", "Informacje"),
       });
       threads.push({
         id: "2",
@@ -244,7 +246,7 @@ export async function getUserThreads(id) {
             threadId: "2",
           },
         ],
-        category: new Category("1", "Programming"),
+        category: new Category("1", "Informacje"),
       });
 
       res(threads);
